@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useRouter } from "next/navigation";
-import videoSrc from "@/assets/iStock-1490250606.mp4" 
+
 const Hero = () => {
   const router = useRouter();
   return (
@@ -37,8 +37,7 @@ const Hero = () => {
         >
           <source
             // src="/api/video"
-            // src="videos/iStock-1490250606.mp4"
-            src={videoSrc}
+            src="videos/iStock-1490250606.mp4"
             type="video/mp4"
             className="w-full h-full"
           />
