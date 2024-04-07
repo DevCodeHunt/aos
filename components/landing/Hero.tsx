@@ -31,9 +31,11 @@ const Hero = () => {
           autoPlay
           muted
           loop
+          poster="/images/banner.png"
         >
           <source
-            src="/api/video"
+            // src="/api/video"
+            src="/videos/iStock-1490250606.mp4"
             type="video/mp4"
             className="w-full h-full"
           />
