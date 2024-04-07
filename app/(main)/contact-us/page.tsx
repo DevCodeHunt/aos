@@ -23,7 +23,8 @@ const ContactPage = () => {
   ];
 
   const currentDayIndex = new Date().getDay();
-  const nextDay = days[currentDayIndex - 1];
+  const nextDayIndex = currentDayIndex === 0 ? days.length - 1 : currentDayIndex - 1;
+const nextDay = days[nextDayIndex];
   return (
     <AnimationWrapper>
       <section className="py-8">

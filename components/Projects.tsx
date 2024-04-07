@@ -19,9 +19,9 @@ const Projects = ({ projects }: Props) => {
             <AnimationWrapper
               key={i}
               transition={{ duration: 1, delay: i * 0.08 }}
-              className="rounded shadow-lg h-full w-full flex flex-col relative"
+              className="rounded shadow-lg h-full w-full  relative"
             >
-              <Link href={`/projects/${project.id}`}>
+              <Link href={`/projects/${project.id}`} className="w-full h-[300px] block">
                 <Image
                   src={project.image}
                   alt="project image"
