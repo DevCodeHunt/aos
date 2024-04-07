@@ -1,11 +1,10 @@
 import fs from "fs";
-import { NextApiRequest, NextApiResponse } from "next";
 import path from "path";
 
 const CHUNK_SIZE_IN_BYTES = 1000000 // 1MB
 
 export async function GET(req: Request, res: Response) {
-  const videoPath = "public/videos/iStock-1490250606.mp4";
+  const videoPath = path.join(process.cwd(), "public", "videos", "iStock-1490250606.mp4");
   const range = req.headers.get('range');
  
   const videoSizeInBytes = fs.statSync(videoPath).size
