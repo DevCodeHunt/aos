@@ -34,6 +34,7 @@ const Hero = () => {
           poster="/images/banner.png"
           width={400}
           height={400}
+          preload="none"
         >
           <source
             // src="/api/video"
