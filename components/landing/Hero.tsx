@@ -32,6 +32,8 @@ const Hero = () => {
           muted
           loop
           poster="/images/banner.png"
+          width={400}
+          height={400}
         >
           <source
             // src="/api/video"
