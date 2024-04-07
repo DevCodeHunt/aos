@@ -1,0 +1,23 @@
+.description p {
+    @apply text-sm my-2 font-normal
+}
+
+.description p strong {
+    @apply font-semibold text-base
+}
+
+.description img {
+    @apply w-full h-[300px] object-cover rounded my-2
+}
+
+.description ul {
+    @apply list-disc px-8
+}
+
+.description ol {
+    @apply list-decimal px-8
+}
+
+.description a {
+    @apply dark:text-blue-400 text-blue-500 hover:underline
+}
