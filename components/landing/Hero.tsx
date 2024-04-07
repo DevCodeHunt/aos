@@ -38,7 +38,7 @@ const Hero = () => {
         >
           <source
             // src="/api/video"
-            src="iStock-1490250606.mp4"
+            src="/videos/iStock-1490250606.mp4"
             type="video/mp4"
             className="w-full h-full"
           />
