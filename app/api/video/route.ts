@@ -8,7 +8,10 @@ export async function GET(req: Request, res: Response) {
   const range = req.headers.get('range');
  
   const videoSizeInBytes = fs.statSync(videoPath).size
-  const chunkStart = Number(range?.replace(/\D/g, ''));
+  let chunkStart = 0;
+  if (range) {
+    chunkStart = Number(range.replace(/\D/g, ""));
+  }
   const chunkEnd = Math.min(chunkStart + CHUNK_SIZE_IN_BYTES - 1, videoSizeInBytes - 1);
   const contentLength = chunkEnd - chunkStart + 1;
   const videoStream = fs.createReadStream(videoPath, {
